@@ -6,4 +6,4 @@ jqorz
 
 支持丰富的画笔
 
-[截图](../screenshot/pic.png)
+[截图](https://github.com/jqorz/Markers/blob/master/screenshots/pic.png)
