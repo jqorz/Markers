@@ -151,6 +151,9 @@ public class Slate extends View {
         return MotionEvent.TOOL_TYPE_FINGER;
     }
 
+    /**
+     * 线性差值
+     */
     public static float lerp(float a, float b, float f) {
         return a + f * (b - a);
     }
@@ -829,6 +832,7 @@ public class Slate extends View {
 
     private class SmoothStroker {
         // The renderer. Given a stream of filtered points, converts it into draw calls.
+        //渲染器。 给定一个过滤点的流，将其转换为绘制调用。
 
         private final RectF tmpRF = new RectF();
         private final RectF tmpDirtyRectF = new RectF();

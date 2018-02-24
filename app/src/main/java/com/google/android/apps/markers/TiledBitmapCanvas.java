@@ -8,7 +8,7 @@ import android.util.FloatMath;
 import android.util.Log;
 
 public class TiledBitmapCanvas implements CanvasLite {
-    public static final String TAG = "Markers/TiledBitmapCanvas";
+    public static final String TAG = "TiledBitmapCanvas";
 
     public static final boolean DEBUG_TILES_ON_COMMIT = false;
     private static final boolean DEBUG_VERBOSE = false;
@@ -379,7 +379,6 @@ public class TiledBitmapCanvas implements CanvasLite {
     public Bitmap toBitmap(int bgcolor) {
         Bitmap bitmap = Bitmap.createBitmap(mWidth, mHeight, mConfig);
         Canvas canvas = new Canvas(bitmap);
-
         if (bgcolor != Color.TRANSPARENT) {
             canvas.drawColor(bgcolor);
         }
